@@ -4,8 +4,10 @@ def oxford_comma(array)
     return "#{array[0]} and #{array[1]}"
   elsif 2 < array.length
     array[-1].insert(0, "and ")
+  else
+  array.join(", ") 
+  
   end
-  array.join(", ")    
 end
 
 #["kiwi", "durian", "starfruit", "mangos", "dragon fruits"])).to eq("kiwi, durian, starfruit, mangos, and dragon fruits")
